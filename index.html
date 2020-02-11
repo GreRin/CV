@@ -1,186 +1,55 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang='en'>
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="yandex-verification" content="7d40aa01328b576e" />
-		<link rel="icon" href="/favicon.ico">
-
-		<title>Автоматизированная штукатурка стен</title>
-
-		<!-- Bootstrap core CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-		<!-- <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet"> -->
-		<!-- Custom styles for this template -->
-		<link href="css/animate.min.css" rel="stylesheet">
-		<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-		<link href="css/style.css" rel="stylesheet">
-		
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132080801-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-
-			gtag('config', 'UA-132080801-1');
-		</script>
-
+		<meta charset='utf-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>CV Ryhor Sidoryn</title>
+		<!-- Bootstrap -->
+		<link rel='stylesheet' type='text/css' href='./css/bootstrap.min.css'>
+		<link rel='stylesheet' type='text/css' href='./css/style.css'>
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	</head>
-
 	<body>
-		<noscript><div><img src="https://mc.yandex.ru/watch/51779507" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-			<!-- /Yandex.Metrika counter -->
-			<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-			<!--[if lt IE 9]>
-				<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-				<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-			<![endif]-->
-		<!-- Yandex.Metrika counter -->
-		<script>
-			(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-			m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-			ym(51779507, "init", {
-					id:51779507,
-					clickmap:true,
-					trackLinks:true,
-					accurateTrackBounce:true,
-					webvisor:true
-			});
-		</script>
-
-	<main class="main">
-			<div class="container">
-				<div class="header">
+		<header>
+			<div class="header info">
+				<h1>RYHOR SIDORYN</h1>
+				<h3>Frontend / JavaScript Developer</h3>
+			</div>
+			<div class="header photo">
+				<div class="header photo_wrapper">
 					
-					<div class="row">
-						<div class="col-xs-12 col-sm-5 col-lg-3">
-							<div class="logo">
-								<img src="img/logo.png" alt="Гипсолит. Штукатурка стен.">
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-3 col-md-4 col-lg-3 offset-lg-3">
-							<div class="phone-block">
-								<a class="phone-link" href="#">+375 29 5577998</a>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-4 col-md-3">
-							<div class="wrap">
-								<div class="wrap-block">
-									<button id="popup-btn" class="button header-btn" onclick="ym(51779507, 'reachGoal', 'popup-btn'); return true;">получить консультацию</button>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="main-content">
-						<div class="row">	
-							<div class="col-sm-6 col-lg-5 col-md-5 ">
-								<div class="main-title wow fadeInLeft">
-									<h1>автоматизированная штукатурка стен</h1>
-									<p class="main-subtitle">Идеально ровные стены<br> в кратчайшие сроки</p>
-									<span>
-										Стоимость работ<br> от <strong>300</strong> руб/м <sup>2</sup>
-									</span>
-									<strong class="main-trigger">
-										оплата по факту!
-									</strong>
-								</div>
-							</div>
-							<div class="col-sm-6 col-md-5 offset-md-2 col-lg-4 offset-lg-3">
-								<div class="main-form wow fadeInRight">
-									<h2 class="main-form-header">Для расчёта точной стоимости<br> закажите <strong>выезд замерщика</strong></h2>
-									<form class="form" id="myform" action="mail.php" method="POST">
-										<label for="name-1">Ваше имя</label>
-										<input name="user-name" class="form-input" required id="name-1" type="text">
-										<label for="phone">Номер телефона</label>
-										<input name="user-phone" class="form-input" required id="phone" type="text">
-										<button class="form-btn button" type="submit">оставьте заявку</button>
-										<small>Приедем в день обращения</small>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
-	</main>
-	
-	<section class="problem">
-
-	</section>
-
-	<section class="materials">
-
-	</section>
-
-	<section class="tour">
-
-	</section>
-
-	<section class="upsell">
-
-	</section>
-
-	<section class="contacts">
-		<div class="container">
-
-		</div>
-	</section>
-
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 col-sm-5">
-					<div class="logo">
-						<img src="img/logo.png" alt="Гипсолит. Штукатурка стен.">
+		</header>
+		<main>
+			<section class="info">
+				<h2 class="visually-hidden">Illustarator character designer Smith Anderson</h2>
+				<article class="article">
+					<div class="ifo-block-1">
+						<div class="hexagone"><div class="hex-layer-1"><div class="hex-layer-2"></div></div></div>
 					</div>
-				</div>
-				<div class="col-md-4 col-sm-3">
-					<div class="footer-contacts">
-						<p><strong>+375 29 5577998</strong></p>
-						<p><a class="contacts-link" href="mailto:rigor1988@gmail.com">rigor1988@gmail.com</a>
-						<p class="contacts-link">Пн.-Пт.: с 9:00 по 18:00</p>
+					<div class="ifo-block-2">
+						<h2>Smith Anderson</h2>
+						<h3>Illustarator & Character Designer</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores debitis optio quam deserunt officia quo non natus reprehenderit et minus. Ratione quaerat, aperiam quod aspernatur, tenetur ducimus iusto, molestias praesentium temporibus enim tempora? Impedit voluptatum, facilis perspiciatis neque unde obcaecati voluptas quia voluptates ipsam, iure animi labore aspernatur possimus consequuntur nobis dolores eos sint recusandae?</p>
+						<div class="info-logo">
+							<a href="https://www.facebook.com/profile.php?id=100001391630802" class="facebook" target="_blank"></a>
+							<a href="https://www.facebook.com/profile.php?id=100001391630802" class="twitter" target="_blank"></a>
+							<a href="https://plus.google.com/u/0/+RYHORSIDORYN?tab=mX" class="google" target="_blank"></a>
+							<a href="https://www.facebook.com/profile.php?id=100001391630802" class="pinterest" target="_blank"></a>
+							<a href="https://www.facebook.com/profile.php?id=100001391630802" class="linkedin" target="_blank"></a>
+							<a href="https://www.facebook.com/profile.php?id=100001391630802" class="dribbble" target="_blank"></a>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-4 col-sm-3">
-					<div class="footer-dev">
-						<p>Разработка сайта:</p>
-						<img src="img/footer/dev-logo.png" alt="logo">
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+				</article>
+			</section>
+		</main>
+		<footer class="in-touch-form">
 
-		<!-- Модальные окна -->
-		<!-- Получить консультацию -->
-		<div class="popup">
-			<!-- Само (белое) модальное окно -->
-			<div class="popup-dialog">
-				<!-- Сдержимое модального окна -->
-				<div class="popup-content">
-					<!--  -->
-					<button id="popup-close" class="popup-close">&times;</button>
-					<h4 class="popup-header">Заинтересовало?</h4>
-					<p>Оставьте свои контактные данные<br> для связи</p>
-					<div class="main-form popup-form">
-						<form class="form" action="#">
-							<label for="name-5">Ваше имя</label>
-							<input class="form-input" id="name-5" type="text">
-							<label for="phone-5">Номер телефона</label>
-							<input class="form-input" id="phone-5" type="text">
-							<label for="message-5">Сообщение</label>
-							<textarea class="form-input" id="message-5" rows="5"></textarea>
-							<button class="form-btn button" type="submit">оставьте заявку</button>
-							<small>Приедем в день обращения</small>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
+		</footer>
 	</body>
 </html>
+<!-- Mentor allow -->

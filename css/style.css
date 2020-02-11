@@ -1,0 +1,63 @@
+html, body  {
+	font-size: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Noto, Helvetica, sans-serif;
+	font-weight: bolder;
+	color: #1d4159;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	width: 940px;
+	height: 1330px;
+	margin: 0 auto;
+	border: 2px solid red;
+	background: url('/img/1.png') no-repeat fixed right top;
+	background-size: 50%;
+	padding: 80px 75px;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	z-index: 5;
+	height: 230px;
+
+	border: 2px solid red;
+} 
+
+.header .info {
+	display: flex;
+	width: 100%;
+}
+
+header h3 {
+	color: #9e8978;
+}
+
+.header .photo {
+	display: flex;
+}
+
+.header .photo_wrapper {
+	display: flex;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 2px solid red;
+	background-image: url('/img/viber\ image.jpg');
+	background-size: 100%;
+	background-position: 20%;
+}
+
+.header .photo img {
+	background: rgb(255, 255, 255);
+	transform: rotate(-60deg);
+	overflow: hidden;
+	visibility: visible;
+	z-index: 5;
+}
