@@ -6,32 +6,39 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: Noto, Helvetica, sans-serif;
 	font-weight: bolder;
 	color: #1d4159;
+	margin: 0;
 }
 
-body {
+p {
+	margin: 0;
+}
+
+.wrapper {
 	display: flex;
 	flex-direction: column;
+	flex-shrink: 0;
 	width: 940px;
 	height: 1330px;
 	margin: 0 auto;
-	border: 2px solid red;
-	background: url('/img/1.png') no-repeat fixed right top;
+	border: 2px solid #bababa;
+	background: url('/img/1.png') no-repeat right top;
 	background-size: 50%;
 	padding: 80px 75px;
 }
 
+/* Header */
 header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	z-index: 5;
-	height: 230px;
-
+	/* height: 230px; */
 	border: 2px solid red;
 } 
 
 .header .info {
 	display: flex;
+	flex-direction: column;
 	width: 100%;
 }
 
@@ -39,22 +46,80 @@ header {
 	display: inline-flex;
 }
 
-.header .job__title h2 {
-	font-size: 5.6rem;
-}
-
-.header .job__description {
-	display: flex;
-	flex-direction: column;
-}
-
-.header .job__description h3:nth-child(1){
-	letter-spacing: 0.25rem;
-}
-
-header h3, header h2 {
+.linkedin, .phone, .email, .skype, .github, .jobstutby {
+	display: inline-flex;
+	align-items: center;
+	font-family: 'FontAwesome', "Arial", sans-serif;
 	color: #9e8978;
-	margin: 0;
+	outline: none;
+	text-align: center;
+	text-decoration: none !important;
+}
+
+.contact__info {
+	display: inline-flex;
+}
+
+.linkedin a, .contact__info__wrapper p {
+	text-decoration: none !important;
+	font-size: 1.8rem;
+	vertical-align: bottom;
+}
+
+.contact__info__wrapper:nth-child(2) {
+	margin: 0 20px;
+}
+
+.contact__info p {
+	font-weight: bold;
+	color: #2e3231;
+}
+
+.linkedin::before, 
+.phone::before, 
+.email::before, 
+.skype::before, 
+.github::before, 
+.jobstutby::before {
+	margin: 5px 10px 5px 0px;
+	font-size: 2rem;
+	outline: none !important;
+	text-decoration: none !important;
+}
+
+.linkedin::before {
+	content: "\f0e1";
+}
+
+.phone::before {
+	content: "\f095";
+}
+
+.email::before {
+	content: "\f0e0";
+}
+
+.skype::before {
+	content: "\f17e";
+}
+
+.github::before {
+	content: "\f09b";
+}
+
+.jobstutby::before {
+	content: "\f0ab";
+}
+
+.contact__info p:hover  {
+	outline: none;
+	text-decoration: none !important;
+	color: #d8c7ba;
+}
+
+header h3 {
+	color: #9e8978;
+	margin: 5px 0 20px 0;
 }
 
 .header .photo {
@@ -66,7 +131,6 @@ header h3, header h2 {
 	width: 150px;
 	height: 150px;
 	border-radius: 50%;
-	border: 2px solid red;
 	background-image: url('/img/viber\ image.jpg');
 	background-size: cover;
 }
