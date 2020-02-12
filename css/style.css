@@ -35,8 +35,26 @@ header {
 	width: 100%;
 }
 
-header h3 {
+.header .job__title {
+	display: inline-flex;
+}
+
+.header .job__title h2 {
+	font-size: 5.6rem;
+}
+
+.header .job__description {
+	display: flex;
+	flex-direction: column;
+}
+
+.header .job__description h3:nth-child(1){
+	letter-spacing: 0.25rem;
+}
+
+header h3, header h2 {
 	color: #9e8978;
+	margin: 0;
 }
 
 .header .photo {
@@ -50,8 +68,7 @@ header h3 {
 	border-radius: 50%;
 	border: 2px solid red;
 	background-image: url('/img/viber\ image.jpg');
-	background-size: 100%;
-	background-position: 20%;
+	background-size: cover;
 }
 
 .header .photo img {
