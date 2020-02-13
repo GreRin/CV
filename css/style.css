@@ -148,18 +148,18 @@ main {
 	flex-direction: row;
 }
 
-.left_column, .right_column {
+.left-column, .right-column {
 	display: flex;
 	flex-direction: column;
 }
 
-.left_column {
+.left-column {
 	width: 60%;
 	/* border: 2px solid red; */
 	margin-right: 20px;
 }
 
-.right_column {
+.right-column {
 	width: 40%;
 	/* border: 2px solid red; */
 }
@@ -171,14 +171,22 @@ main {
 }
 
 .container h3 {
-	margin: 10px 0;
+	margin-top: 10px;
 	color: #9e8978;
 	font-weight: normal;
 }
 
-.container_title {
+.container__title {
 	width: 100%;
 	border-bottom: 4px solid #1d4159;
+	margin-top: 20px;
+}
+
+.dash-line {
+	width: 100%;
+	border-bottom: 2px dotted #9e8978;
+	margin: 10px 0;
+	padding: 0;
 }
 
 .container ul {
@@ -190,7 +198,7 @@ main {
 	font-size: 1.2rem;
 }
 
-.calendar, .place_pointer {
+.calendar, .place-pointer {
 	display: inline-flex;
 	align-items: center;
 }
@@ -210,7 +218,7 @@ main {
 	color: #9e8978;
 }
 
-.place_pointer {
+.place-pointer {
 	margin-left: 20px;
 }
 
@@ -220,7 +228,7 @@ main {
 	flex-direction: column;
 }
 
-.international_house, .streamline {
+.international-house, .streamline {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -228,9 +236,45 @@ main {
 	width: 50%;
 }
 
-.international_house p, .streamline p {
+.international-house p, .streamline p {
 	margin: 0;
 }
-.international_house img, .streamline img {
+.international-house img, .streamline img {
 	width: 95%;
+}
+
+/* Education */
+.rsschool {
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.university {
+	margin: 10px 10px 10px 0;
+}
+
+.university a {
+	text-decoration: none;
+	color: #1d4159;
+}
+
+.university a:hover {
+	text-decoration: none;
+	color: #5d9ac2;
+}
+
+.certificate {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.certificate img {
+	width: 60%;
+}
+
+.rsschool-styled {
+	display: flex;
+	flex-direction: column;
+	min-width: 60%;
 }
