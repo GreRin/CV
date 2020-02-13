@@ -32,7 +32,6 @@ header {
 	flex-direction: row;
 	justify-content: space-between;
 	z-index: 5;
-	/* height: 230px; */
 	border: 2px solid red;
 } 
 
@@ -120,6 +119,7 @@ header {
 header h3 {
 	color: #9e8978;
 	margin: 5px 0 20px 0;
+	font-size: 3rem;
 }
 
 .header .photo {
@@ -128,8 +128,8 @@ header h3 {
 
 .header .photo_wrapper {
 	display: flex;
-	width: 150px;
-	height: 150px;
+	width: 200px;
+	height: 200px;
 	border-radius: 50%;
 	background-image: url('/img/viber\ image.jpg');
 	background-size: cover;
@@ -141,4 +141,73 @@ header h3 {
 	overflow: hidden;
 	visibility: visible;
 	z-index: 5;
+}
+
+/* Main */
+main {
+	display: flex;
+	flex-direction: row;
+}
+
+.left_column, .right_column {
+	display: flex;
+	flex-direction: column;
+}
+
+.left_column {
+	width: 60%;
+	border: 2px solid red;
+	height: 300px;
+	margin-right: 20px;
+}
+
+.right_column {
+	width: 40%;
+	border: 2px solid red;
+	height: 300px;
+}
+
+.container {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.container h3 {
+	margin: 10px 0;
+	color: #1d4159;
+	font-weight: normal;
+}
+
+.expirience {
+	width: 100%;
+	border-bottom: 4px solid #1d4159;
+}
+
+.container ul {
+	margin: 5px;
+	padding-left: 10px;
+}
+
+.container ul {
+	font-size: 1.2rem;
+}
+
+.calendar, .place_pointer {
+	display: inline-flex;
+	align-items: center;
+}
+
+.infoblock p {
+	margin-left: 10px;
+	font-size: 1.5rem;
+}
+
+.fa-calendar-alt, .fa-map-marker-alt {
+	font-size: 2rem;
+	color: #9e8978;
+}
+
+.place_pointer {
+	margin-left: 20px;
 }
