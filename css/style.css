@@ -32,7 +32,6 @@ header {
 	flex-direction: row;
 	justify-content: space-between;
 	z-index: 5;
-	border: 2px solid red;
 } 
 
 .header .info {
@@ -156,15 +155,13 @@ main {
 
 .left_column {
 	width: 60%;
-	border: 2px solid red;
-	height: 300px;
+	/* border: 2px solid red; */
 	margin-right: 20px;
 }
 
 .right_column {
 	width: 40%;
-	border: 2px solid red;
-	height: 300px;
+	/* border: 2px solid red; */
 }
 
 .container {
@@ -175,11 +172,11 @@ main {
 
 .container h3 {
 	margin: 10px 0;
-	color: #1d4159;
+	color: #9e8978;
 	font-weight: normal;
 }
 
-.expirience {
+.container_title {
 	width: 100%;
 	border-bottom: 4px solid #1d4159;
 }
@@ -198,6 +195,11 @@ main {
 	align-items: center;
 }
 
+.infoblock {
+	display: inline-flex;
+	align-items: center;
+}
+
 .infoblock p {
 	margin-left: 10px;
 	font-size: 1.5rem;
@@ -210,4 +212,25 @@ main {
 
 .place_pointer {
 	margin-left: 20px;
+}
+
+/* Languages section */
+.schoolname {
+	display: flex;
+	flex-direction: column;
+}
+
+.international_house, .streamline {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+}
+
+.international_house p, .streamline p {
+	margin: 0;
+}
+.international_house img, .streamline img {
+	width: 95%;
 }
