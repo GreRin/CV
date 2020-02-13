@@ -340,3 +340,15 @@ main {
 .methodologies p {
 	margin-right: 5px;
 }
+
+/* Projects */
+.projects {
+	display: inline-flex;
+}
+.websites {
+	margin: 5px;
+	width: 30%;
+}
+.projects img {
+	width: 100%;
+}
