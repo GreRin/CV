@@ -23,7 +23,7 @@ p {
 	border: 2px solid #bababa;
 	background: url('/img/1.png') no-repeat right top;
 	background-size: 50%;
-	padding: 80px 75px;
+	padding: 60px;
 }
 
 /* Header */
@@ -171,7 +171,7 @@ main {
 }
 
 .container h3 {
-	margin-top: 10px;
+	margin: 10px 0;
 	color: #9e8978;
 	font-weight: normal;
 }
@@ -195,7 +195,7 @@ main {
 }
 
 .container ul {
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 }
 
 .calendar, .place-pointer {
@@ -206,6 +206,7 @@ main {
 .infoblock {
 	display: inline-flex;
 	align-items: center;
+	width: 100%;
 }
 
 .infoblock p {
@@ -264,7 +265,7 @@ main {
 	color: #5d9ac2;
 }
 
-.certificate {
+.certificate a {
 	display: flex;
 	justify-content: flex-end;
 }
@@ -277,4 +278,65 @@ main {
 	display: flex;
 	flex-direction: column;
 	min-width: 60%;
+}
+
+/* Skills */
+.infoblock__skills {
+	display: flex;
+	flex-direction: column;
+}
+
+.infoblock__skills p {
+	font-size: 1.5rem;
+}
+
+.skills {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	width: 100%;
+	margin: 5px 0;
+}
+
+.skills p {
+	margin: 0 5px 0 0;
+}
+
+.gradation {
+	display: inline-flex;
+}
+
+.color-blue, .color-broun {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin: 0 5px;
+}
+
+.color-blue {
+	background-color: #1d4159;
+}
+
+.color-broun {
+	background-color: #9e8978;
+}
+
+/* Other skills */
+.other-skills {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.other-skills p {
+	margin: 5px 0;
+	font-size: 1.5rem;
+}
+
+.methodologies {
+	display: inline-flex;
+}
+
+.methodologies p {
+	margin-right: 5px;
 }
