@@ -348,10 +348,10 @@ main {
 /* Projects */
 .projects {
 	display: inline-flex;
+	justify-content: space-between;
 }
 
 .websites {
-	margin: 0 5px;
 	width: 30%;
 }
 
