@@ -410,8 +410,28 @@ main {
 	letter-spacing: -1.1px;
 }
 
+/* Footer */
 footer {
-	width: 100%;
-	border-bottom: 4px solid #1d4159;
-	margin-top: 20px;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 4px solid #1d4159;
+	margin-top: 10px;
+}
+
+.download_btn  ul {
+	list-style-type: none;
+	
+}
+
+.actions  a, footer p {
+	font-size: 1.5rem;
+	color: #1d4159;
+	
+}
+
+.fa-download, .fa-print {
+	font-size: 2rem;
+	margin: 10px;
+	color: #9e8978;
 }
