@@ -255,12 +255,16 @@ main {
 	margin: 10px 10px 10px 0;
 }
 
-.university a {
+.university-rs {
+	margin: 0px 10px 10px 0;
+}
+
+.university a, .university-rs a {
 	text-decoration: none;
 	color: #1d4159;
 }
 
-.university a:hover {
+.university a:hover, .university-rs a:hover {
 	text-decoration: none;
 	color: #5d9ac2;
 }
@@ -345,10 +349,32 @@ main {
 .projects {
 	display: inline-flex;
 }
+
 .websites {
 	margin: 5px;
 	width: 30%;
 }
+
+.websites h4 {
+	/* margin-bottom: 5px; */
+}
+
+.websites-header {
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.websites-header a::before {
+	margin: 0;
+}
+
 .projects img {
 	width: 100%;
+	border: 1px solid #9e8978;
+}
+
+.hexal {
+	letter-spacing: -1px;
 }
