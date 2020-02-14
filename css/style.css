@@ -151,17 +151,16 @@ main {
 .left-column, .right-column {
 	display: flex;
 	flex-direction: column;
+	align-content: stretched;
 }
 
 .left-column {
 	width: 60%;
-	/* border: 2px solid red; */
 	margin-right: 20px;
 }
 
 .right-column {
 	width: 40%;
-	/* border: 2px solid red; */
 }
 
 .container {
@@ -345,6 +344,24 @@ main {
 	margin-right: 5px;
 }
 
+.calendar-passions {
+	display: inline-flex;
+	align-items: center;
+}
+
+.calendar-passions p {
+	display: inline-flex;
+	align-items: center;
+	font-weight: bold;
+	color: #1d4159;
+}
+
+.fa-volleyball-ball, .fa-globe-americas, .fa-skiing {
+	font-size: 2rem;
+	margin: 10px 0;
+	color: #9e8978;
+}
+
 /* Projects */
 .projects {
 	display: inline-flex;
@@ -391,4 +408,10 @@ main {
 
 .bootstrap {
 	letter-spacing: -1.1px;
+}
+
+footer {
+	width: 100%;
+	border-bottom: 4px solid #1d4159;
+	margin-top: 20px;
 }
