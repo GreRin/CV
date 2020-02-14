@@ -151,7 +151,6 @@ main {
 .left-column, .right-column {
 	display: flex;
 	flex-direction: column;
-	align-content: stretched;
 }
 
 .left-column {
