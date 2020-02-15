@@ -1,5 +1,6 @@
 html, body  {
 	font-size: 10px;
+	-webkit-print-color-adjust: exact;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,9 +22,16 @@ p {
 	height: 1330px;
 	margin: 0 auto;
 	border: 2px solid #bababa;
-	background: url('/img/1.png') no-repeat right top;
+	background: url('/img/background.jpg') no-repeat right top;
 	background-size: 50%;
-	padding: 60px;
+	padding: 40px 60px;
+}
+
+.wrapper-background {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	width: 20%;
 }
 
 /* Header */
@@ -169,7 +177,7 @@ main {
 }
 
 .container h3 {
-	margin: 10px 0;
+	margin: 10px 0 5px 0;
 	color: #9e8978;
 	font-weight: normal;
 }
@@ -371,10 +379,6 @@ main {
 	width: 30%;
 }
 
-.websites h4 {
-	/* margin-bottom: 5px; */
-}
-
 .websites-header {
 	display: inline-flex;
 	justify-content: space-between;
@@ -433,4 +437,36 @@ footer {
 	font-size: 2rem;
 	margin: 10px;
 	color: #9e8978;
+}
+
+@media print {
+  a[href]:after {
+    content: "";
+	}
+	
+	.header .photo_wrapper {
+		display: flex;
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		background-image: url('/img/viber\ image.jpg');
+		background-size: cover;
+	}
+
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		flex-shrink: 0;
+		width: 940px;
+		height: 1330px;
+		margin: 0 auto;
+		border: 2px solid #bababa;
+		background: url('/img/1.png') no-repeat right top;
+		background-size: 50%;
+		padding: 40px 60px;
+	}
+
+	body { 
+		-webkit-print-color-adjust: exact; 
+	}
 }
