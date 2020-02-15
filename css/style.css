@@ -56,7 +56,7 @@ header {
 	display: inline-flex;
 	align-items: center;
 	font-family: 'FontAwesome', "Arial", sans-serif;
-	color: #9e8978;
+	color: rgb(158, 137, 120) !important;
 	outline: none;
 	text-align: center;
 	text-decoration: none !important;
@@ -124,7 +124,7 @@ header {
 }
 
 header h3 {
-	color: #9e8978;
+	color: rgb(158, 137, 120) !important;
 	margin: 5px 0 20px 0;
 	font-size: 3rem;
 }
@@ -178,7 +178,7 @@ main {
 
 .container h3 {
 	margin: 10px 0 5px 0;
-	color: #9e8978;
+	color: rgb(158, 137, 120) !important;
 	font-weight: normal;
 }
 
@@ -436,13 +436,17 @@ footer {
 .fa-download, .fa-print {
 	font-size: 2rem;
 	margin: 10px;
-	color: #9e8978;
+	color: rgb(158, 137, 120) !important;
 }
 
 @media print {
 	* {
 		-webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
 		color-adjust: exact !important;                 /*Firefox*/
+	}
+
+	body { 
+		-webkit-print-color-adjust: exact !important; 
 	}
 
   a[href]:after {
@@ -459,7 +463,7 @@ footer {
 		background-size: 50%;
 	}
 
-	body { 
-		-webkit-print-color-adjust: exact; 
+	.fa-download, .fa-print {
+		color: rgb(158, 137, 120) !important;
 	}
 }
