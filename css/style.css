@@ -22,9 +22,16 @@ p {
 	height: 1330px;
 	margin: 0 auto;
 	border: 2px solid #bababa;
-	background: url('/img/1.png') no-repeat right top;
+	background: url('/img/background.jpg') no-repeat right top;
 	background-size: 50%;
 	padding: 40px 60px;
+}
+
+.wrapper-background {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	width: 20%;
 }
 
 /* Header */
