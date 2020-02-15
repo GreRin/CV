@@ -22,8 +22,8 @@ p {
 	height: 1330px;
 	margin: 0 auto;
 	border: 2px solid #bababa;
-	background: url('/img/background.jpg') no-repeat right top;
-	background-size: 50%;
+	background: url('/img/background.jpg') no-repeat right top !important;
+	background-size: 50% !important;
 	padding: 40px 60px;
 }
 
@@ -138,8 +138,8 @@ header h3 {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-	background-image: url('/img/viber\ image.jpg');
-	background-size: cover;
+	background-image: url('/img/viber\ image.jpg') !important;
+	background-size: cover !important;
 }
 
 .header .photo img {
@@ -430,7 +430,7 @@ footer {
 .actions  a, footer p {
 	font-size: 1.5rem;
 	color: #1d4159;
-	
+	text-decoration: none;	
 }
 
 .fa-download, .fa-print {
@@ -440,30 +440,23 @@ footer {
 }
 
 @media print {
+	* {
+		-webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
+		color-adjust: exact !important;                 /*Firefox*/
+	}
+
   a[href]:after {
     content: "";
 	}
 	
 	.header .photo_wrapper {
-		display: flex;
-		width: 200px;
-		height: 200px;
-		border-radius: 50%;
-		background-image: url('/img/viber\ image.jpg');
+		background-image: url('/img/viber\ image.jpg') !important;
 		background-size: cover;
 	}
 
 	.wrapper {
-		display: flex;
-		flex-direction: column;
-		flex-shrink: 0;
-		width: 940px;
-		height: 1330px;
-		margin: 0 auto;
-		border: 2px solid #bababa;
-		background: url('/img/1.png') no-repeat right top;
+		content: url('/img/1.png') no-repeat right top !important;
 		background-size: 50%;
-		padding: 40px 60px;
 	}
 
 	body { 
