@@ -278,11 +278,12 @@ main {
 .certificate a {
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
 }
 
 .rssert {
 	width: 60%;
-	height: 90px;
+	height: 80px;
 }
 
 .rsschool-styled {
