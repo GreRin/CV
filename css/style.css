@@ -22,7 +22,7 @@ p {
 	height: 1330px;
 	margin: 0 auto;
 	border: 2px solid #bababa;
-	background: url('/img/background.jpg') no-repeat right top !important;
+	background: url('/img/Background.jpg') no-repeat right top !important;
 	background-size: 50% !important;
 	padding: 40px 60px;
 }
@@ -139,7 +139,7 @@ header h3 {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-	background-image: url('/img/viber\ image.jpg') !important;
+	background-image: url('/img/MyPhoto.jpg') !important;
 	background-size: cover !important;
 }
 
