@@ -283,10 +283,12 @@ main {
 .certificate a {
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
 }
 
-.certificate img {
+.rssert {
 	width: 60%;
+	height: 80px;
 }
 
 .rsschool-styled {
