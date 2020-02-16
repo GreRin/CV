@@ -22,8 +22,8 @@ p {
 	height: 1330px;
 	margin: 0 auto;
 	border: 2px solid #bababa;
-	background: url('../img/Background.jpg') no-repeat right top;
-	background-size: 50%;
+	background: url('../img/Background.jpg') no-repeat right top !important;
+	background-size: 50% !important;
 	padding: 40px 60px;
 }
 
