@@ -6,7 +6,7 @@ html, body  {
 h1, h2, h3, h4, h5, h6 {
 	font-family: Noto, Helvetica, sans-serif;
 	font-weight: bolder;
-	color: #1d4159;
+	color: rgb(29, 65, 89) !important;
 	margin: 0;
 }
 
@@ -56,7 +56,7 @@ header {
 	display: inline-flex;
 	align-items: center;
 	font-family: 'FontAwesome', "Arial", sans-serif;
-	color: #9e8978;
+	color: rgb(158, 137, 120) !important;
 	outline: none;
 	text-align: center;
 	text-decoration: none !important;
@@ -91,6 +91,7 @@ header {
 	font-size: 2rem;
 	outline: none !important;
 	text-decoration: none !important;
+	color: rgb(158, 137, 120) !important;
 }
 
 .linkedin::before {
@@ -124,7 +125,7 @@ header {
 }
 
 header h3 {
-	color: #9e8978;
+	color: rgb(158, 137, 120) !important;
 	margin: 5px 0 20px 0;
 	font-size: 3rem;
 }
@@ -138,8 +139,13 @@ header h3 {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
+<<<<<<< HEAD
 	background-image: url('../img/MyPhoto.jpg');
 	background-size: cover;
+=======
+	background-image: url('/img/MyPhoto.jpg') !important;
+	background-size: cover !important;
+>>>>>>> 516d5a6de8cc97e9ccf54521c52bcac1cf3ae489
 }
 
 .header .photo img {
@@ -178,19 +184,19 @@ main {
 
 .container h3 {
 	margin: 10px 0 5px 0;
-	color: #9e8978;
+	color: rgb(158, 137, 120) !important;
 	font-weight: normal;
 }
 
 .container__title {
 	width: 100%;
-	border-bottom: 4px solid #1d4159;
+	border-bottom: 4px solid rgb(29, 65, 89) !important;
 	margin-top: 20px;
 }
 
 .dash-line {
 	width: 100%;
-	border-bottom: 2px dotted #9e8978;
+	border-bottom: 2px dotted rgb(158, 137, 120) !important;
 	margin: 10px 0;
 	padding: 0;
 }
@@ -222,7 +228,11 @@ main {
 
 .fa-calendar-alt, .fa-map-marker-alt {
 	font-size: 2rem;
-	color: #9e8978;
+	color: rgb(158, 137, 120) !important;
+}
+
+.fa-calendar-alt::before, .fa-map-marker-alt::before {
+	color: rgb(158, 137, 120) !important;
 }
 
 .place-pointer {
@@ -267,7 +277,7 @@ main {
 
 .university a, .university-rs a {
 	text-decoration: none;
-	color: #1d4159;
+	color: rgb(29, 65, 89) !important;
 }
 
 .university a:hover, .university-rs a:hover {
@@ -326,11 +336,11 @@ main {
 }
 
 .color-blue {
-	background-color: #1d4159;
+	background-color: rgb(29, 65, 89) !important;
 }
 
 .color-broun {
-	background-color: #9e8978;
+	background-color: rgb(158, 137, 120) !important;
 }
 
 /* Other skills */
@@ -362,13 +372,17 @@ main {
 	display: inline-flex;
 	align-items: center;
 	font-weight: bold;
-	color: #1d4159;
+	color: rgb(29, 65, 89) !important;
 }
 
 .fa-volleyball-ball, .fa-globe-americas, .fa-skiing {
 	font-size: 2rem;
 	margin: 10px 0;
-	color: #9e8978;
+	color: rgb(158, 137, 120) !important;
+}
+
+.fa-volleyball-ball::before, .fa-globe-americas::before, .fa-skiing::before {
+	color: rgb(158, 137, 120) !important;
 }
 
 /* Projects */
@@ -394,7 +408,7 @@ main {
 
 .projects img {
 	width: 100%;
-	border: 1px solid #9e8978;
+	border: 1px solid rgb(158, 137, 120) !important;
 }
 
 .hexal {
@@ -420,7 +434,7 @@ footer {
 	display: inline-flex;
 	justify-content: space-between;
 	align-items: center;
-	border-top: 4px solid #1d4159;
+	border-top: 4px solid rgb(29, 65, 89) !important;
 	margin-top: 10px;
 }
 
@@ -431,44 +445,31 @@ footer {
 
 .actions  a, footer p {
 	font-size: 1.5rem;
-	color: #1d4159;
-	
+	color: rgb(29, 65, 89) !important;
+	text-decoration: none;	
 }
 
 .fa-download, .fa-print {
 	font-size: 2rem;
 	margin: 10px;
-	color: #9e8978;
+	color: rgb(158, 137, 120) !important;
+}
+
+.fa-download::before, .fa-print::before {
+	color: rgb(158, 137, 120) !important;
 }
 
 @media print {
-  a[href]:after {
-    content: "";
-	}
-	
-	.header .photo_wrapper {
-		display: flex;
-		width: 200px;
-		height: 200px;
-		border-radius: 50%;
-		background-image: url('/img/viber\ image.jpg');
-		background-size: cover;
-	}
-
-	.wrapper {
-		display: flex;
-		flex-direction: column;
-		flex-shrink: 0;
-		width: 940px;
-		height: 1330px;
-		margin: 0 auto;
-		border: 2px solid #bababa;
-		background: url('/img/1.png') no-repeat right top;
-		background-size: 50%;
-		padding: 40px 60px;
+	* {
+		-webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
+		color-adjust: exact !important;                 /*Firefox*/
 	}
 
 	body { 
-		-webkit-print-color-adjust: exact; 
+		-webkit-print-color-adjust: exact !important; 
+	}
+
+  a[href]:after {
+    content: "";
 	}
 }
