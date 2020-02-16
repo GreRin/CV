@@ -55,17 +55,11 @@ header {
 .linkedin, .phone, .email, .skype, .github, .jobstutby {
 	display: inline-flex;
 	align-items: center;
-	font-family: 'FontAwesome', "Arial", sans-serif !important;
 	color: rgb(158, 137, 120) !important;
 	outline: none;
 	text-align: center;
 	text-decoration: none !important;
-}
-
-.fa-github {
-	font-size: 2rem;
-	color: rgb(158, 137, 120) !important;
-	margin: 5px 0;
+	margin-right: 10px;
 }
 
 .contact__info {
@@ -87,41 +81,21 @@ header {
 	color: #2e3231;
 }
 
-.linkedin::before, 
-.phone::before, 
-.email::before, 
-.skype::before, 
-.github::before, 
-.jobstutby::before {
-	margin: 5px 10px 5px 0px;
+.fa-github,
+.fa-skype,
+.fa-phone,
+.fa-envelope,
+.fa-arrow-circle-down,
+.fa-linkedin  {
+	margin: 5px 0px;
 	font-size: 2rem;
 	outline: none !important;
 	text-decoration: none !important;
 	color: rgb(158, 137, 120) !important;
 }
 
-.linkedin::before {
-	content: "\f0e1";
-}
-
-.phone::before {
-	content: "\f095";
-}
-
-.email::before {
-	content: "\f0e0";
-}
-
-.skype::before {
-	content: "\f17e";
-}
-
-.github::before {
-	content: "\f09b";
-}
-
-.jobstutby::before {
-	content: "\f0ab";
+.github-project {
+	margin: 0;
 }
 
 .contact__info p:hover  {
