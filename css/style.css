@@ -55,7 +55,7 @@ header {
 .linkedin, .phone, .email, .skype, .github, .jobstutby {
 	display: inline-flex;
 	align-items: center;
-	font-family: 'FontAwesome', "Arial", sans-serif;
+	font-family: 'FontAwesome', "Arial", sans-serif !important;
 	color: rgb(158, 137, 120) !important;
 	outline: none;
 	text-align: center;
@@ -139,8 +139,8 @@ header h3 {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-	background-image: url('../img/MyPhoto.jpg');
-	background-size: cover;
+	background-image: url('../img/MyPhoto.jpg') !important;
+	background-size: cover !important;
 }
 
 .header .photo img {
