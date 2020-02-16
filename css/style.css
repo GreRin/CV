@@ -66,7 +66,7 @@ header {
 	display: inline-flex;
 }
 
-.linkedin a, .contact__info__wrapper p {
+.linkedin p, .contact__info__wrapper p {
 	text-decoration: none !important;
 	font-size: 1.8rem;
 	vertical-align: bottom;
@@ -78,7 +78,7 @@ header {
 
 .contact__info p {
 	font-weight: bold;
-	color: #2e3231;
+	color: rgb(29, 65, 89) !important;
 }
 
 .fa-github,
@@ -93,6 +93,16 @@ header {
 	text-decoration: none !important;
 	color: rgb(158, 137, 120) !important;
 }
+
+.fa-github::before,
+.fa-skype::before,
+.fa-phone::before,
+.fa-envelope::before,
+.fa-arrow-circle-down::before,
+.fa-linkedin::before  {
+	color: rgb(158, 137, 120) !important;
+}
+
 
 .github-project {
 	margin: 0;
