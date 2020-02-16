@@ -139,13 +139,8 @@ header h3 {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-<<<<<<< HEAD
 	background-image: url('../img/MyPhoto.jpg');
 	background-size: cover;
-=======
-	background-image: url('/img/MyPhoto.jpg') !important;
-	background-size: cover !important;
->>>>>>> 516d5a6de8cc97e9ccf54521c52bcac1cf3ae489
 }
 
 .header .photo img {
